@@ -8,7 +8,7 @@ export default function Footer() {
           <img
             src="../../company_logo.png"
             alt="mangroveshield-logo"
-            className="w-[2rem] h-[2rem]"
+            className="w-12 h-12"
           />
           <p className="font-bold">
             MS Corp. <br />

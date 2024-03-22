@@ -1,9 +1,8 @@
 "use client";
-import React, { useContext, useEffect, useState } from "react";
+import React from "react";
 import ThemeController from "./ThemeController";
 
 import Link from "next/link";
-import Hero from "./Hero";
 import { usePathname } from "next/navigation";
 
 const navLink = [
@@ -25,9 +24,9 @@ export default function Navbar() {
           <div className="flex-1">
             <Link href="/" className="btn btn-ghost text-xl">
               <img
-                src="../../company_logo.png"
+                src="../../company_logo_11zon.png"
                 alt="mangroveshield-logo"
-                className="w-[2rem] h-auto"
+                className="w-7 h-7"
               />
               MS Corp.
             </Link>
