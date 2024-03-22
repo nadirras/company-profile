@@ -27,7 +27,7 @@ export default function Navbar() {
               <img
                 src="../../company_logo.png"
                 alt="mangroveshield-logo"
-                className="w-[2rem] h-[2rem]"
+                className="w-[2rem] h-auto"
               />
               MS Corp.
             </Link>

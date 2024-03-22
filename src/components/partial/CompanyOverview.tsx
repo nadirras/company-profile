@@ -35,18 +35,19 @@ export default function CompanyOverview() {
             </div>
           </div>
           <span className="hidden overview">
-            <img
-              src="../../office2.png"
+            {/* <img
+              src="../../office2.webp"
               className="max-h-[17rem] max-w-[23rem] ml-3 mr-3 object-cover rounded-lg"
               alt="mangroveshield_office"
-            />
-            {/* <Image
-              src="/office2.png"
-              width={400}
-              height={400}
-              alt="office of MS"
-              className="object-cover rounded-lg"
             /> */}
+            <Image
+              src="/office2.webp"
+              width={370}
+              height={370}
+              alt="office of MS"
+              className="object-cover rounded-lg ml-3 mr-3"
+              loading="lazy"
+            />
           </span>
         </div>
 
@@ -56,18 +57,19 @@ export default function CompanyOverview() {
             className="hidden overview"
             // style={{ backgroundImage: "url(../history.jpg)" }}
           >
-            <img
-              src="../../history.jpg"
+            {/* <img
+              src="../../history.webp"
               className="max-h-[20rem] max-w-[23rem] object-cover rounded-lg ml-3"
               alt="mangroveshield_history"
-            />
-            {/* <Image
-              src="/history.jpg"
-              width={400}
-              height={400}
-              alt="history of MS"
-              className="object-cover rounded-lg"
             /> */}
+            <Image
+              src="/history.webp"
+              width={370}
+              height={370}
+              alt="history of MS"
+              className="object-cover rounded-lg ml-3"
+              loading="lazy"
+            />
           </span>
           <div className="card w-96 bg-base-100 shadow-2xl">
             <div className="card-body">
@@ -108,18 +110,19 @@ export default function CompanyOverview() {
             </div>
           </div>
           <span className="hidden overview">
-            <img
-              src="../../biomed.jpg"
+            {/* <img
+              src="../../biomed.webp"
               className="max-h-[20rem] max-w-[23rem] ml-3 mr-3 object-cover rounded-lg"
               alt="biomedical_engineering_in_ms"
-            />
-            {/* <Image
-              src="/biomed.jpg"
-              width={400}
-              height={400}
-              alt="colaboration"
-              className="object-cover rounded-lg"
             /> */}
+            <Image
+              src="/biomed.webp"
+              width={370}
+              height={370}
+              alt="colaboration"
+              className="object-cover rounded-lg ml-3 mr-3"
+              loading="lazy"
+            />
           </span>
         </div>
       </div>
