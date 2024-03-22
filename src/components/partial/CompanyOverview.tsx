@@ -38,6 +38,7 @@ export default function CompanyOverview() {
             <img
               src="../../office2.png"
               className="max-h-[17rem] max-w-[23rem] ml-3 mr-3 object-cover rounded-lg"
+              alt="mangroveshield_office"
             />
             {/* <Image
               src="/office2.png"
@@ -58,6 +59,7 @@ export default function CompanyOverview() {
             <img
               src="../../history.jpg"
               className="max-h-[20rem] max-w-[23rem] object-cover rounded-lg ml-3"
+              alt="mangroveshield_history"
             />
             {/* <Image
               src="/history.jpg"
@@ -109,6 +111,7 @@ export default function CompanyOverview() {
             <img
               src="../../biomed.jpg"
               className="max-h-[20rem] max-w-[23rem] ml-3 mr-3 object-cover rounded-lg"
+              alt="biomedical_engineering_in_ms"
             />
             {/* <Image
               src="/biomed.jpg"
