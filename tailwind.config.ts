@@ -21,7 +21,7 @@ const config: Config = {
       {
         customDark: {
           primary: "#2B4162",
-          secondary: "#9A8C98",
+          secondary: "#c9b3b4",
           accent: "#8B4513",
           neutral: "#F4F3EE",
           "base-100": "#473839",

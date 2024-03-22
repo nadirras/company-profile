@@ -70,15 +70,20 @@ export default function FetchProduct() {
             key={product.id}
             className="flex flex-row flex-wrap justify-center items-center gap-3 mx-5 my-5"
           >
-            <Link href={`/products/${product.id}`}>
-              <div className="card w-96 bg-base-100 shadow-xl hover:bg-neutral hover:text-primary">
-                <div className="card-body">
-                  <h2 className="card-title">{product.title}</h2>
-                  <p>Access more about {product.title}.</p>
-                  <div className="card-actions justify-end"></div>
-                </div>
+            <div className="card w-96 bg-base-100 shadow-xl">
+              <div className="card-body">
+                <h2 className="card-title">{product.title}</h2>
+                <p>Access more about {product.title}.</p>
+                <div className="card-actions justify-end"></div>
               </div>
-            </Link>
+
+              <Link
+                href={`/products/${product.id}`}
+                className="btn btn-primary justify-center"
+              >
+                See Details
+              </Link>
+            </div>
           </div>
         );
       })}

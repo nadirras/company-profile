@@ -99,7 +99,7 @@ export default function Navbar() {
                       aria-label="close sidebar"
                       className="drawer-overlay"
                     ></label>
-                    <ul className="menu p-4 w-70 min-h-full bg-base-200 text-base-content">
+                    <div className="menu p-4 w-70 min-h-full bg-base-200 text-base-content">
                       {/* Sidebar content here */}
                       {navLink.map((link) => {
                         const isActive = pathname === link.href;
@@ -116,7 +116,7 @@ export default function Navbar() {
                           </Link>
                         );
                       })}
-                    </ul>
+                    </div>
                   </div>
                 </div>
               </div>

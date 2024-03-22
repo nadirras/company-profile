@@ -21,9 +21,10 @@ export default function CompanyOverview() {
         <div className="grid md:grid-cols-2 items-center">
           <div className="card w-96 bg-base-100 shadow-2xl">
             <div className="card-body">
-              <h2 className="text-xs text-secondary font-bold tracking-[0.2rem]">
+              <h2 className="text-md text-secondary font-bold tracking-[0.2rem]">
                 COMPANY OVERVIEW
               </h2>
+              <div className="divider my-0"></div>
               <p>
                 MS Corp. (Mangroveshield Corporation) is a leading conglomerate
                 specializing in healthcare, biotechnology, and security
@@ -68,9 +69,10 @@ export default function CompanyOverview() {
           </span>
           <div className="card w-96 bg-base-100 shadow-2xl">
             <div className="card-body">
-              <h2 className="text-xs text-secondary font-bold tracking-[0.2rem]">
+              <h2 className="text-md text-secondary font-bold tracking-[0.2rem]">
                 COMPANY HISTORY
               </h2>
+              <div className="divider my-0"></div>
               <p>
                 MS Corp. was founded in 2001 with a visionary mission to
                 revolutionize the health industry. From its humble beginnings as
@@ -88,9 +90,10 @@ export default function CompanyOverview() {
         <div className="grid md:grid-cols-2 items-center">
           <div className="card w-96 bg-base-100 shadow-2xl">
             <div className="card-body">
-              <h2 className="text-xs text-secondary font-bold tracking-[0.2rem]">
+              <h2 className="text-md text-secondary font-bold tracking-[0.2rem]">
                 CULTURE
               </h2>
+              <div className="divider my-0"></div>
               <p>
                 At MS Corp., our culture is built on a foundation of innovation,
                 collaboration, and compassion. We believe in fostering a

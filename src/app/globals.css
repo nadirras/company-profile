@@ -14,12 +14,12 @@
 
 @media (max-width: 786px) {
   html {
-    font-size: 80%;
+    font-size: 85%;
   }
 }
 
 @media (max-width: 480px) {
   html {
-    font-size: 70%;
+    font-size: 80%;
   }
 }
