@@ -7,10 +7,10 @@ export default function Hero({ id }: any) {
         className="hero min-h-screen"
         style={{ backgroundImage: "url(/lab_hero_enhanced.webp)" }}
       >
-        <div className="hero-overlay bg-opacity-[72%]"></div>
+        <div className="hero-overlay bg-opacity-[60%]"></div>
         <div className="hero-content text-left text-base-100 ">
           <div className="max-w-md">
-            <h1 className="mb-5 text-4xl font-bold customFont">
+            <h1 className="mb-4 text-3xl font-extrabold text-customPrimary md:text-5xl lg:text-6xl customFont [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-gray-700">
               Empowering Better Healthcare Systems, Together!
             </h1>
             <p>

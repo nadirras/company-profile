@@ -1,9 +1,9 @@
 import ResearchHighlight from "@/components/product-partial/ResearchHighlight";
 
-import React from "react";
+import React, { Suspense } from "react";
 import { Metadata } from "next";
-import Link from "next/link";
 import FetchProduct from "@/components/product-partial/FetchProduct";
+import Loading from "./loading";
 
 export const metadata: Metadata = {
   title: "Products",
@@ -11,15 +11,19 @@ export const metadata: Metadata = {
 
 export default function ProductsPage() {
   return (
-    <div className="pt-[6rem]">
-      <h1 className="text-3xl font-bold text-center">Products and Services</h1>
-      <p className="text-center mt-3">
-        We have various products and services that beneficial for your health.
-      </p>
+    <Suspense fallback={<Loading />}>
+      <div className="pt-[6rem]">
+        <h1 className="text-3xl font-bold text-center">
+          Products and Services
+        </h1>
+        <p className="text-center mt-3">
+          We have various products and services that beneficial for your health.
+        </p>
 
-      <FetchProduct />
+        <FetchProduct />
 
-      <ResearchHighlight />
-    </div>
+        <ResearchHighlight />
+      </div>
+    </Suspense>
   );
 }

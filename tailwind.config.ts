@@ -29,6 +29,7 @@ const config: Config = {
           success: "#4F7942",
           warning: "#C07400",
           error: "#8B0000",
+          customPrimary: "#2B4162",
         },
         customLight: {
           primary: "#81A4CD",
@@ -40,6 +41,7 @@ const config: Config = {
           success: "#8FBC8F",
           warning: "#CFB53B",
           error: "#800000",
+          customPrimary: "#FFFFF0",
         },
       },
     ],

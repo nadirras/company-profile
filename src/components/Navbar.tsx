@@ -4,6 +4,7 @@ import ThemeController from "./ThemeController";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const navLink = [
   {
@@ -23,11 +24,18 @@ export default function Navbar() {
         <div className="navbar bg-base-100 bg-opacity-75 w-screen">
           <div className="flex-1">
             <Link href="/" className="btn btn-ghost text-xl">
-              <img
+              <Image
+                src="/company_logo_11zon.png"
+                width={30}
+                height={30}
+                alt="ms-logo"
+                loading="lazy"
+              />
+              {/* <img
                 src="../../company_logo_11zon.png"
                 alt="mangroveshield-logo"
                 className="w-7 h-7"
-              />
+              /> */}
               MS Corp.
             </Link>
           </div>
