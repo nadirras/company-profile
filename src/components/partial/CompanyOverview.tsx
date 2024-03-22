@@ -14,7 +14,6 @@ export default function CompanyOverview() {
         </div>
       </div>
 
-      {/* <div className="absolute bg-primary w-full h-screen z-0 rounded-t-r40 md:rounded-t-r64 lg:rounded-t-r96 top-[65rem]"></div> */}
       {/* Card Section */}
       <div className="flex flex-col justify-center items-center mt-3 gap-3 p-10">
         {/* Card 1 */}
@@ -35,11 +34,6 @@ export default function CompanyOverview() {
             </div>
           </div>
           <span className="hidden overview">
-            {/* <img
-              src="../../office2.webp"
-              className="max-h-[17rem] max-w-[23rem] ml-3 mr-3 object-cover rounded-lg"
-              alt="mangroveshield_office"
-            /> */}
             <Image
               src="/office2.webp"
               width={370}
@@ -53,15 +47,7 @@ export default function CompanyOverview() {
 
         {/* Card 2 */}
         <div className="overview-container grid gap-3 items-center">
-          <span
-            className="hidden overview"
-            // style={{ backgroundImage: "url(../history.jpg)" }}
-          >
-            {/* <img
-              src="../../history.webp"
-              className="max-h-[20rem] max-w-[23rem] object-cover rounded-lg ml-3"
-              alt="mangroveshield_history"
-            /> */}
+          <span className="hidden overview">
             <Image
               src="/history.webp"
               width={370}
@@ -110,11 +96,6 @@ export default function CompanyOverview() {
             </div>
           </div>
           <span className="hidden overview">
-            {/* <img
-              src="../../biomed.webp"
-              className="max-h-[20rem] max-w-[23rem] ml-3 mr-3 object-cover rounded-lg"
-              alt="biomedical_engineering_in_ms"
-            /> */}
             <Image
               src="/biomed.webp"
               width={370}

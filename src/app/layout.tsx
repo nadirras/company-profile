@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Montserrat } from "next/font/google";
+
 import "./globals.css";
 
 import React from "react";
@@ -32,3 +33,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const dynamic = "force-static";

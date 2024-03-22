@@ -58,19 +58,8 @@ export default function Navbar() {
                   </Link>
                 );
               })}
-              {/* <Link href="/" className="max-md:hidden font-bold">
-                Home
-              </Link>
-              <Link href="/blog" className="max-md:hidden font-bold">
-                Blog
-              </Link>
-              <Link href="/products" className="max-md:hidden font-bold">
-                Products
-              </Link>
-              <Link href="/about-us" className="max-md:hidden font-bold">
-                About Us
-              </Link> */}
-              <div className="flex items-center">
+
+              <div className="flex items-center mr-3">
                 <ThemeController />
 
                 <div className="drawer drawer-end max-w-[5rem] md:hidden">
