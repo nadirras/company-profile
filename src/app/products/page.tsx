@@ -1,4 +1,4 @@
-import ResearchHighlight from "@/components/product-partial/ResearchHighlight";
+// import ResearchHighlight from "@/components/product-partial/ResearchHighlight";
 
 import React, { Suspense } from "react";
 import { Metadata } from "next";
@@ -25,7 +25,7 @@ export default function ProductsPage() {
 
         <FetchProduct />
 
-        <ResearchHighlight />
+        {/* <ResearchHighlight /> */}
       </div>
     </Suspense>
   );

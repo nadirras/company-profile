@@ -81,7 +81,7 @@ export default function FetchProduct() {
             key={product.id}
           >
             <div className="flex justify-center items-center py-3">
-              <figure className=" w-[20rem] h-[20rem] relative">
+              <figure className=" w-[16rem] h-[16rem] relative">
                 {!loaded && <Loading />}
                 <Image
                   src={`${product.image}`}
@@ -89,7 +89,7 @@ export default function FetchProduct() {
                   fill
                   objectFit="cover"
                   className=" rounded"
-                  loading="lazy"
+                  // loading="lazy"
                   onLoad={handleImageLoad}
                 />
               </figure>
