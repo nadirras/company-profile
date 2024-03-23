@@ -3,14 +3,20 @@ import Link from "next/link";
 
 export default function Team() {
   return (
-    <div className="mt-3 mr-5 ml-5 mb-3 rounded-3xl p-5 bg-neutral">
-      <h1 className="text-3xl font-bold text-base-100 text-center mb-5">
+    <div className="mt-3 mr-5 ml-5 mb-3 rounded-3xl p-5 bg-neutral overflow-x-hidden">
+      <h1
+        className="text-4xl font-extrabold text-base-100 text-center mb-5 max-md:text-3xl max-sm:text-2xl"
+        data-aos="fade-left"
+      >
         Our Teams
       </h1>
       <div className="flex flex-col flex-wrap justify-center items-center gap-2">
         {/* CEO */}
         <div className="grid md:grid-cols-2">
-          <div className="card max-w-[40rem] bg-base-100 shadow-xl">
+          <div
+            className="card max-w-[40rem] bg-base-100 shadow-xl"
+            data-aos="fade-right"
+          >
             <div className="flex items-center ml-3">
               {/* Avatar */}
               <div className="avatar placeholder max-sm:hidden">
@@ -38,7 +44,10 @@ export default function Team() {
         {/* COO */}
         <div className="grid md:grid-cols-2">
           <span className="text-red max-md:hidden"></span>
-          <div className="card max-w-[40rem] bg-base-100 shadow-xl">
+          <div
+            className="card max-w-[40rem] bg-base-100 shadow-xl"
+            data-aos="fade-left"
+          >
             <div className="flex items-center ml-3">
               {/* Avatar */}
               <div className="avatar placeholder max-sm:hidden">
@@ -60,7 +69,10 @@ export default function Team() {
 
         {/* CMO */}
         <div className="grid md:grid-cols-2">
-          <div className="card max-w-[40rem] bg-base-100 shadow-xl">
+          <div
+            className="card max-w-[40rem] bg-base-100 shadow-xl"
+            data-aos="fade-right"
+          >
             <div className="flex items-center ml-3">
               {/* Avatar */}
               <div className="avatar placeholder max-sm:hidden">
@@ -84,7 +96,10 @@ export default function Team() {
         {/* CTO */}
         <div className="grid md:grid-cols-2">
           <span className="text-red max-md:hidden"></span>
-          <div className="card max-w-[40rem] bg-base-100 shadow-xl">
+          <div
+            className="card max-w-[40rem] bg-base-100 shadow-xl"
+            data-aos="fade-left"
+          >
             <div className="flex items-center ml-3">
               {/* Avatar */}
               <div className="avatar placeholder max-sm:hidden">
@@ -106,7 +121,10 @@ export default function Team() {
 
         {/* CFO */}
         <div className="grid md:grid-cols-2">
-          <div className="card max-w-[40rem] bg-base-100 shadow-xl">
+          <div
+            className="card max-w-[40rem] bg-base-100 shadow-xl"
+            data-aos="fade-right"
+          >
             <div className="flex items-center ml-3">
               {/* Avatar */}
               <div className="avatar placeholder max-sm:hidden">

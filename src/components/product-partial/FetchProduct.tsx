@@ -10,7 +10,8 @@ import {
   FirestoreError,
 } from "firebase/firestore";
 import Link from "next/link";
-import { IProduct } from "@/type/type";
+import Image from "next/image";
+import Loading from "@/app/products/loading";
 
 export async function fetchDataFromFirestore() {
   try {
@@ -61,28 +62,49 @@ export default function FetchProduct() {
     }
     fetchData();
   }, []);
-  console.log(productData);
+  // console.log(productData);
+
+  const [loaded, setLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setLoaded(true);
+  };
   return (
-    <div>
+    <div
+      className="flex flex-wrap gap-3 mb-5 mx-7 justify-center items-center my-5 bg-neutral rounded-xl p-5"
+      data-aos="fade-up"
+    >
       {productData.map((product: any) => {
         return (
           <div
+            className="card w-[25rem] bg-base-100 shadow-xl"
             key={product.id}
-            className="flex flex-row flex-wrap justify-center items-center gap-3 mx-5 my-5"
           >
-            <div className="card w-96 bg-base-100 shadow-xl">
-              <div className="card-body">
-                <h2 className="card-title">{product.title}</h2>
-                <p>Access more about {product.title}.</p>
-                <div className="card-actions justify-end"></div>
+            <div className="flex justify-center items-center py-3">
+              <figure className=" w-[20rem] h-[20rem] relative">
+                {!loaded && <Loading />}
+                <Image
+                  src={`${product.image}`}
+                  alt={product.title}
+                  fill
+                  objectFit="cover"
+                  className=" rounded"
+                  loading="lazy"
+                  onLoad={handleImageLoad}
+                />
+              </figure>
+            </div>
+            <div className="card-body">
+              <h2 className="card-title">{product.title}</h2>
+              <p>Access more about {product.title}.</p>
+              <div className="card-actions justify-end">
+                <Link
+                  href={`/products/${product.id}`}
+                  className="btn btn-primary"
+                >
+                  See Details
+                </Link>
               </div>
-
-              <Link
-                href={`/products/${product.id}`}
-                className="btn btn-primary justify-center"
-              >
-                See Details
-              </Link>
             </div>
           </div>
         );

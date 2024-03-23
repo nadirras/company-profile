@@ -4,11 +4,11 @@ import React from "react";
 export default function CompanyHistory() {
   return (
     <div>
-      <h1 className="text-2xl font-bold text-center mt-2">
+      <h1 className="text-2xl font-bold text-center mt-2" data-aos="fade-up">
         Company Information
       </h1>
       <div className="flex flex-row max-md:flex-col flex-wrap justify-center items-center">
-        <div className="card p-3 max-w-[50rem]">
+        <div className="card p-3 max-w-[50rem]" data-aos="fade-up">
           <div className="card-body">
             <h3 className="font-bold">Brief Information</h3>
             <ul className="list-disc">
@@ -22,7 +22,7 @@ export default function CompanyHistory() {
               <li>Employees: 10,000+</li>
             </ul>
           </div>
-          <div className="card p-3 max-w-[50rem]">
+          <div className="card p-3 max-w-[50rem]" data-aos="fade-up">
             <h3 className="font-bold">Company History</h3>
             <p>
               MS Corp. was founded in 2001 with a visionary mission to
@@ -35,7 +35,7 @@ export default function CompanyHistory() {
             </p>
           </div>
 
-          <div className="card p-3 max-w-[50rem]">
+          <div className="card p-3 max-w-[50rem]" data-aos="fade-up">
             <h3 className="font-bold">Key Areas of Operation</h3>
             <ol className="list-decimal">
               <li>
@@ -68,7 +68,7 @@ export default function CompanyHistory() {
             </ol>
           </div>
 
-          <div className="card p-3 max-w-[50rem]">
+          <div className="card p-3 max-w-[50rem]" data-aos="fade-up">
             <h3 className="font-bold">Culture</h3>
             <p>
               At MS Corp., our culture is built on a foundation of innovation,

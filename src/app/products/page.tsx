@@ -13,10 +13,13 @@ export default function ProductsPage() {
   return (
     <Suspense fallback={<Loading />}>
       <div className="pt-[6rem]">
-        <h1 className="text-3xl font-bold text-center">
+        <h1
+          className="text-5xl font-extrabold text-center max-md:text-4xl max-sm:text-3xl"
+          data-aos="fade-down"
+        >
           Products and Services
         </h1>
-        <p className="text-center mt-3">
+        <p className="text-center mt-3" data-aos="fade-down">
           We have various products and services that beneficial for your health.
         </p>
 

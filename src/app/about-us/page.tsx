@@ -14,7 +14,12 @@ export default function AboutUs() {
   return (
     <Suspense fallback={<Loading />}>
       <div className="pt-[6rem]">
-        <h1 className="text-3xl font-bold text-center">About Us</h1>
+        <h1
+          className="text-5xl font-extrabold max-md:text-4xl max-sm:text-3xl text-center"
+          data-aos="fade-down"
+        >
+          About Us
+        </h1>
         <CompanyHistory />
         <Team />
       </div>
