@@ -11,6 +11,7 @@ export default function CopyButton({
 }) {
   const [value, copy] = useCopyToClipboard();
   const [copied, setCopied] = useState(false);
+
   return (
     <div>
       <button
@@ -19,7 +20,7 @@ export default function CopyButton({
           copy(`${url}/blog/${slug}`);
           setCopied(true);
         }}
-        className="btn btn-base-100"
+        className="btn btn-base-200 btn-sm "
       >
         {copied ? (
           <span className="inline-flex items-center">

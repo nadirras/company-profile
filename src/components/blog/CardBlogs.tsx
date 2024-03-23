@@ -1,6 +1,9 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Link from "next/link";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Image from "next/image";
+import Loading from "@/app/blog/loading";
 
 interface IBlog {
   title: string;
@@ -17,15 +20,31 @@ export const CardBlogs: React.FC<IBlog> = ({
   email,
   detail,
 }) => {
+  const [loaded, setLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setLoaded(true);
+  };
   return (
     <div>
-      <div className="card w-[30rem] bg-base-100 shadow-xl">
-        <figure className="px-10 pt-10">
-          <img
-            className="rounded-t-lg h-64 w-64 object-cover"
-            src={`https:${img}`}
-          />
-        </figure>
+      <div
+        className="card w-[30rem] bg-base-100 shadow-xl border-2 border-secondary"
+        data-aos="fade-down"
+      >
+        <div className="flex justify-center pt-3">
+          <figure className=" w-[20rem] h-[20rem] relative">
+            {!loaded && <Loading />}
+            <Image
+              src={`https:${img}`}
+              alt={title}
+              fill
+              objectFit="cover"
+              className=" rounded"
+              loading="lazy"
+              onLoad={handleImageLoad}
+            />
+          </figure>
+        </div>
         <div className="card-body">
           <h2 className="card-title">{title}</h2>
           <div className="flex flex-col">

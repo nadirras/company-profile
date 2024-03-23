@@ -5,6 +5,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 
 import React from "react";
+import { AOSInit } from "@/components/aos";
 
 const inter = Inter({ subsets: ["latin"] });
 const monserrat = Montserrat({ weight: "400", subsets: ["latin"] });
@@ -27,6 +28,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <AOSInit />
       <body className={inter.className}>
         <div>{children}</div>
       </body>

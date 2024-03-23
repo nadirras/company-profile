@@ -77,11 +77,21 @@ export default async function BlogContent({
       {/* <h1 className="text-3xl text-center font-bold mb-3">
         {blog.fields.title}
       </h1> */}
-      <img
+      {/* <Image
         src={`https:${blog.fields.img.fields.file.url}`}
+        fill
+        objectFit="cover"
         alt="image"
-        className="w-full max-sm:px-7 md:w-96 h-auto float-left md:ml-[10rem] md:mr-5 max-md:float-none max-md:w-full lg:max-w-[20rem] xl:max-w-[30rem] mt-5"
-      />
+        // className=" w-full max-sm:px-7 md:w-96 h-auto float-left md:ml-[10rem] md:mr-5 max-md:float-none max-md:w-full lg:max-w-[20rem] xl:max-w-[30rem] mt-5"
+        loading="lazy"
+      /> */}
+      <div className="max-md:flex max-md:justify-center max-md:items-center">
+        <img
+          src={`https:${blog.fields.img.fields.file.url}`}
+          alt="image"
+          className="w-[80%] max-sm:px-7 md:w-96 h-auto float-left md:ml-[10rem] md:mr-5 lg:max-w-[20rem] xl:max-w-[30rem] mt-5 "
+        />
+      </div>
       <p className="px-[10rem] max-md:px-[5rem] max-sm:px-[3rem] text-justify">
         {documentToReactComponents(blog.fields.content)}
       </p>

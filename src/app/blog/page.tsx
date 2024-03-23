@@ -13,10 +13,22 @@ export default async function Blog() {
 
   return (
     <Suspense fallback={<Loading />}>
-      <div className="pt-[10rem] pb-[10rem]">
-        <h1 className="text-3xl font-bold text-center">{`What's on MS`}</h1>
-        <p className="text-center mb-3">Our stories and latest updates</p>
-        <div className="flex flex-wrap gap-2 justify-center items-center">
+      <div className="pt-[10rem] pb-[10rem] overflow-x-hidden">
+        <h1
+          className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-center mb-2"
+          data-aos="fade-left"
+        >{`What's on MS`}</h1>
+        <div className="flex text-center justify-center" data-aos="fade-left">
+          <div className="w-6/12 lg:w-8/12 xl:w-7/12 ml-0">
+            <p>
+              Our stories and latest updates. Check out our newest stories and
+              stay informed with the latest updates.
+            </p>
+          </div>
+        </div>
+
+        <div className="divider mb-5"></div>
+        <div className="flex flex-wrap gap-4 justify-center items-center">
           {blogs.map((item: any) => {
             return (
               <CardBlogs
