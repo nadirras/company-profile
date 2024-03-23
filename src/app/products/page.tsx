@@ -20,8 +20,9 @@ export default function ProductsPage() {
           Products and Services
         </h1>
         <p className="text-center mt-3" data-aos="fade-down">
-          We have various products and services that beneficial for your health.
+          We have various products and services for your well-being.
         </p>
+        <div className="divider"></div>
 
         <FetchProduct />
 

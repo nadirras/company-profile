@@ -70,15 +70,13 @@ export default function FetchProduct() {
     setLoaded(true);
   };
   return (
-    <div
-      className="flex flex-wrap gap-3 mb-[10rem] mt-[5rem] mx-7 justify-center items-center my-5 bg-neutral rounded-xl p-5"
-      data-aos="fade-up"
-    >
+    <div className="flex flex-wrap justify-center pt-3 gap-3 my-[5rem]">
       {productData.map((product: any) => {
         return (
           <div
-            className="card w-[25rem] bg-base-100 shadow-xl"
+            className="card w-[25rem] bg-base-100 shadow-xl border-2 border-secondary "
             key={product.id}
+            data-aos="fade-down"
           >
             <div className="flex justify-center items-center py-3">
               <figure className=" w-[16rem] h-[16rem] relative">
