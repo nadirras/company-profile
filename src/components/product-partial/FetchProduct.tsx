@@ -91,6 +91,7 @@ export default function FetchProduct() {
                   className=" rounded"
                   // loading="lazy"
                   onLoad={handleImageLoad}
+                  // unoptimized={false}
                 />
               </figure>
             </div>
