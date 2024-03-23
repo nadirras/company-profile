@@ -71,7 +71,7 @@ export default function FetchProduct() {
   };
   return (
     <div
-      className="flex flex-wrap gap-3 mb-5 mx-7 justify-center items-center my-5 bg-neutral rounded-xl p-5"
+      className="flex flex-wrap gap-3 mb-[10rem] mt-[5rem] mx-7 justify-center items-center my-5 bg-neutral rounded-xl p-5"
       data-aos="fade-up"
     >
       {productData.map((product: any) => {
